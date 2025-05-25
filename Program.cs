@@ -78,8 +78,6 @@ do
         continue;
     }
 
-
-
     switch (numero)
     {
         case 1:
