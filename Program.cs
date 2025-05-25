@@ -27,247 +27,247 @@
 // }
 
 
-// int numero;
-// do
-// {
-//     Console.WriteLine("-----------Menu---------");
-//     Console.WriteLine("1_Suma");
-//     Console.WriteLine("2_Resta");
-//     Console.WriteLine("3_Division");
-//     Console.WriteLine("4_Multiplicacion");
-//     Console.WriteLine("5_Valor absoluto");
-//     Console.WriteLine("6_El cuadrado de un numero");
-//     Console.WriteLine("7_La raiz de ese numero");
-//     Console.WriteLine("8_El seno");
-//     Console.WriteLine("9_El coseno");
-//     Console.WriteLine("10_Parte entera de un float");
-//     Console.WriteLine("Escriba 0 para salir");
+int numero;
+do
+{
+    Console.WriteLine("-----------Menu---------");
+    Console.WriteLine("1_Suma");
+    Console.WriteLine("2_Resta");
+    Console.WriteLine("3_Division");
+    Console.WriteLine("4_Multiplicacion");
+    Console.WriteLine("5_Valor absoluto");
+    Console.WriteLine("6_El cuadrado de un numero");
+    Console.WriteLine("7_La raiz de ese numero");
+    Console.WriteLine("8_El seno");
+    Console.WriteLine("9_El coseno");
+    Console.WriteLine("10_Parte entera de un float");
+    Console.WriteLine("Escriba 0 para salir");
 
-//     Console.WriteLine("Ingrese un numero para elegir la operacion");
-//     string opcion = Console.ReadLine() ?? "";
+    Console.WriteLine("Ingrese un numero para elegir la operacion");
+    string opcion = Console.ReadLine() ?? "";
 
-//     bool control = int.TryParse(opcion, out numero);
+    bool control = int.TryParse(opcion, out numero);
 
-//     if (!control)
-//     {
-//         Console.WriteLine("Debe ingresar un número válido para seleccionar una opción.");
-//         continue;
-//     }
+    if (!control)
+    {
+        Console.WriteLine("Debe ingresar un número válido para seleccionar una opción.");
+        continue;
+    }
 
-//     if (numero == 0) break;
+    if (numero == 0) break;
 
-//     Console.WriteLine("Ingrese el primer numero");
-//     string numero1 = Console.ReadLine() ?? "";
-//     float a;
-//     bool control2 = float.TryParse(numero1, out a);
+    Console.WriteLine("Ingrese el primer numero");
+    string numero1 = Console.ReadLine() ?? "";
+    float a;
+    bool control2 = float.TryParse(numero1, out a);
 
-//     if (!control2)
-//     {
-//         Console.WriteLine("Debe ingresar un número válido para el valor de a.");
-//         continue;
-//     }
+    if (!control2)
+    {
+        Console.WriteLine("Debe ingresar un número válido para el valor de a.");
+        continue;
+    }
 
-//     Console.WriteLine("Ingrese el segundo numero");
-//     string numero2 = Console.ReadLine() ?? "";
-//     float b;
-//     bool control3 = float.TryParse(numero2, out b);
+    Console.WriteLine("Ingrese el segundo numero");
+    string numero2 = Console.ReadLine() ?? "";
+    float b;
+    bool control3 = float.TryParse(numero2, out b);
 
-//     if (!control3)
-//     {
-//         Console.WriteLine("Debe ingresar un número válido para el valor de b.");
-//         continue;
-//     }
+    if (!control3)
+    {
+        Console.WriteLine("Debe ingresar un número válido para el valor de b.");
+        continue;
+    }
 
-//     switch (numero)
-//     {
-//         case 1:
-//             suma(a, b);
-//             break;
-//         case 2:
-//             resta(a, b);
-//             break;
-//         case 3:
-//             division(a, b);
-//             break;
-//         case 4:
-//             multiplicacion(a, b);
-//             break;
-//         case 5:
-//             valorAbsoluto(a, b);
-//             break;
-//         case 6:
-//             cuadrado(a, b);
-//             break;
-//         case 7:
-//             raiz(a, b);
-//             break;
-//         case 8:
-//             seno(a, b);
-//             break;
-//         case 9:
-//             coseno(a, b);
-//             break;
+    switch (numero)
+    {
+        case 1:
+            suma(a, b);
+            break;
+        case 2:
+            resta(a, b);
+            break;
+        case 3:
+            division(a, b);
+            break;
+        case 4:
+            multiplicacion(a, b);
+            break;
+        case 5:
+            valorAbsoluto(a, b);
+            break;
+        case 6:
+            cuadrado(a, b);
+            break;
+        case 7:
+            raiz(a, b);
+            break;
+        case 8:
+            seno(a, b);
+            break;
+        case 9:
+            coseno(a, b);
+            break;
 
-//         case 10:
-//             parteEntera(a, b);
+        case 10:
+            parteEntera(a, b);
 
-//             break;
-//         default:
-//             Console.WriteLine("Ingrese un numero valido");
-//             break;
-//     }
+            break;
+        default:
+            Console.WriteLine("Ingrese un numero valido");
+            break;
+    }
 
-//     numeroMaximo(a, b);
+    numeroMaximo(a, b);
 
-// } while (numero != 0);
+} while (numero != 0);
 
-// void suma(float a, float b)
-// {
-//     float total = a + b;
-//     Console.WriteLine("El resultado de la suma de " + a.ToString() + " y b " + b.ToString() + " es: " + total.ToString());
+void suma(float a, float b)
+{
+    float total = a + b;
+    Console.WriteLine("El resultado de la suma de " + a.ToString() + " y " + b.ToString() + " es: " + total.ToString());
 
-// }
+}
 
-// void resta(float a, float b)
-// {
-//     float total = a - b;
-//     Console.WriteLine("El resultado de la resta de " + a.ToString() + " y b " + b.ToString() + " es: " + total.ToString());
+void resta(float a, float b)
+{
+    float total = a - b;
+    Console.WriteLine("El resultado de la resta de " + a.ToString() + " y  " + b.ToString() + " es: " + total.ToString());
 
-// }
+}
 
-// void division(float a, float b)
-// {
-//     float total = a / b;
-//     Console.WriteLine("El resultado de la division de " + a.ToString() + " y b " + b.ToString() + " es: " + total.ToString());
+void division(float a, float b)
+{
+    float total = a / b;
+    Console.WriteLine("El resultado de la division de " + a.ToString() + " y  " + b.ToString() + " es: " + total.ToString());
 
-// }
+}
 
-// void multiplicacion(float a, float b)
-// {
-//     float total = a * b;
-//     Console.WriteLine("El resultado de la multiplicacion de " + a.ToString() + " y b " + b.ToString() + " es: " + total.ToString());
+void multiplicacion(float a, float b)
+{
+    float total = a * b;
+    Console.WriteLine("El resultado de la multiplicacion de " + a.ToString() + " y " + b.ToString() + " es: " + total.ToString());
 
-// }
+}
 
-// void valorAbsoluto(float a, float b)
-// {
-//     if (a < 0)
-//     {
-//         float total = a * -1;
-//         Console.WriteLine("El resultado del valor absoludo de " + a.ToString() + " es: " + total.ToString());
-//     }
-//     else
-//     {
-//         Console.WriteLine("El resultado del valor absoluto de a es: " + a.ToString());
-//     }
+void valorAbsoluto(float a, float b)
+{
+    if (a < 0)
+    {
+        float total = a * -1;
+        Console.WriteLine("El resultado del valor absoludo de " + a.ToString() + " es: " + total.ToString());
+    }
+    else
+    {
+        Console.WriteLine("El resultado del valor absoluto de a es: " + a.ToString());
+    }
 
-//     if (b < 0)
-//     {
-//         float total2 = b * -1;
-//         Console.WriteLine("El resultado del valor absoludo de " + b.ToString() + "es: " + total2.ToString());
-//     }
-//     else
-//     {
-//         Console.WriteLine("El resultado del valor absoluto de b es: " + b.ToString());
-//     }
-
-
-// }
-
-// void cuadrado(float a, float b)
-// {
-//     float total = a * a;
-//     float total2 = b * b;
-
-//     Console.WriteLine("El resultado del cuadrado de a es: " + total.ToString());
-//     Console.WriteLine("El resultado del cuadrado de b es: " + total2.ToString());
+    if (b < 0)
+    {
+        float total2 = b * -1;
+        Console.WriteLine("El resultado del valor absoludo de " + b.ToString() + "es: " + total2.ToString());
+    }
+    else
+    {
+        Console.WriteLine("El resultado del valor absoluto de b es: " + b.ToString());
+    }
 
 
-// }
+}
 
-// void seno(float a, float b)
-// {
+void cuadrado(float a, float b)
+{
+    float total = a * a;
+    float total2 = b * b;
 
-//     double total = Math.Sin(a);
-//     double total2 = Math.Sin(b);
-
-//     Console.WriteLine("El resultado del seno de a es: " + total.ToString());
-//     Console.WriteLine("El resultado del seno de b es: " + total2.ToString());
+    Console.WriteLine("El resultado del cuadrado de a es: " + total.ToString());
+    Console.WriteLine("El resultado del cuadrado de b es: " + total2.ToString());
 
 
-// }
+}
 
-// void coseno(float a, float b)
-// {
-//     double total = Math.Cos(a);
-//     double total2 = Math.Cos(b);
+void seno(float a, float b)
+{
 
-//     Console.WriteLine("El resultado del seno de a es: " + total.ToString());
-//     Console.WriteLine("El resultado del seno de b es: " + total2.ToString());
+    double total = Math.Sin(a);
+    double total2 = Math.Sin(b);
 
-// }
+    Console.WriteLine("El resultado del seno de a es: " + total.ToString());
+    Console.WriteLine("El resultado del seno de b es: " + total2.ToString());
 
-// void raiz(float a, float b)
-// {
 
-//     if (a > 0)
-//     {
-//         double total = Math.Sqrt(a);
-//         Console.WriteLine("La raiz de a es: " + total.ToString());
-//     }
-//     else
-//     {
-//         Console.WriteLine("a es menor que 0");
-//     }
+}
 
-//     if (b > 0)
-//     {
-//         double total = Math.Sqrt(b);
-//         Console.WriteLine("La raiz de b es: " + total.ToString());
-//     }
-//     else
-//     {
-//         Console.WriteLine("b es menor que 0");
-//     }
+void coseno(float a, float b)
+{
+    double total = Math.Cos(a);
+    double total2 = Math.Cos(b);
 
-// }
+    Console.WriteLine("El resultado del seno de a es: " + total.ToString());
+    Console.WriteLine("El resultado del seno de b es: " + total2.ToString());
 
-// void parteEntera(float a, float b)
-// {
-//     int aEntero = (int)a; 
-//     int bEntero = (int)b; 
+}
 
-//     Console.WriteLine("Parte entera de a: " + aEntero.ToString());
-//     Console.WriteLine("Parte entera de b: " + bEntero.ToString());
+void raiz(float a, float b)
+{
 
-// }
+    if (a > 0)
+    {
+        double total = Math.Sqrt(a);
+        Console.WriteLine("La raiz de a es: " + total.ToString());
+    }
+    else
+    {
+        Console.WriteLine("a es menor que 0");
+    }
 
-// void numeroMaximo(float a, float b)
-// {
+    if (b > 0)
+    {
+        double total = Math.Sqrt(b);
+        Console.WriteLine("La raiz de b es: " + total.ToString());
+    }
+    else
+    {
+        Console.WriteLine("b es menor que 0");
+    }
 
-//     float numeroMasGrande;
-//     float numeroMasChico;
+}
 
-//     if (a > b)
-//     {
-//         numeroMasGrande = a;
-//         numeroMasChico = b;
-//         Console.WriteLine("Numero mas grande: " + numeroMasGrande);
-//         Console.WriteLine("Numero mas chico: " + numeroMasChico);
-//     }
-//     else if (b > a)
-//     {
-//         numeroMasGrande = b;
-//         numeroMasChico = a;
-//         Console.WriteLine("Numero mas grande: " + numeroMasGrande);
-//         Console.WriteLine("Numero mas chico: " + numeroMasChico);
-//     }
-//     else
-//     {
-//         Console.WriteLine("Ambos numeros son iguales");
-//     }
+void parteEntera(float a, float b)
+{
+    int aEntero = (int)a;
+    int bEntero = (int)b;
 
-// }
+    Console.WriteLine("Parte entera de a: " + aEntero.ToString());
+    Console.WriteLine("Parte entera de b: " + bEntero.ToString());
+
+}
+
+void numeroMaximo(float a, float b)
+{
+
+    float numeroMasGrande;
+    float numeroMasChico;
+
+    if (a > b)
+    {
+        numeroMasGrande = a;
+        numeroMasChico = b;
+        Console.WriteLine("Numero mas grande: " + numeroMasGrande);
+        Console.WriteLine("Numero mas chico: " + numeroMasChico);
+    }
+    else if (b > a)
+    {
+        numeroMasGrande = b;
+        numeroMasChico = a;
+        Console.WriteLine("Numero mas grande: " + numeroMasGrande);
+        Console.WriteLine("Numero mas chico: " + numeroMasChico);
+    }
+    else
+    {
+        Console.WriteLine("Ambos numeros son iguales");
+    }
+
+}
 
 
 
@@ -309,9 +309,60 @@ Console.WriteLine("Cantidad de veces que aparecio " + palabraABuscar +" :" +cont
 Console.WriteLine("Cadena a mayusculas: " + texto.ToUpper());
 Console.WriteLine("Cadena a minusculas: " + texto.ToLower());
 
-string[] palabras = texto.Split(' '); 
+string[] palabras = texto.Split(' ');
 
 foreach (string palabra in palabras)
 {
     Console.WriteLine(palabra);
 }
+
+Console.WriteLine("Ingrese una ecuacion");
+string ecuacion = Console.ReadLine() ?? "";
+
+foreach (char signo in ecuacion)
+{
+    if (signo == '+' || signo == '-' || signo == '*' || signo == '/')
+    {
+        Console.WriteLine("Signo: " + signo);
+        int auxiliar = ecuacion.IndexOf(signo);
+
+        string parte1 = ecuacion.Substring(0, auxiliar);
+        string parte2 = ecuacion.Substring(auxiliar + 1);
+
+        bool controlar = int.TryParse(parte1, out int numero1);
+
+        if (!controlar)
+        {
+            Console.WriteLine("Debe ingresar un número válido.");
+            continue;
+        }
+
+        bool controlar2 = int.TryParse(parte2, out int numero2);
+
+        if (!controlar2)
+        {
+            Console.WriteLine("Debe ingresar un número válido.");
+            continue;
+        }
+
+        switch (signo)
+        {
+            case '+':
+                suma(numero1, numero2);
+                break;
+            case '-':
+                resta(numero1, numero2);
+                break;
+            case '/':
+                division(numero1, numero2);
+                break;
+            case '*':
+                multiplicacion(numero1, numero2);
+                break;
+
+        }
+
+        break;
+    }
+}
+
